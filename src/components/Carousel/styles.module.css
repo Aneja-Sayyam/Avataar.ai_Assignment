@@ -1,0 +1,76 @@
+.container{
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 54px;
+}
+.header{
+    margin-top: 180px;
+    color: #231F20;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+}
+.header>h1{
+    line-height: 42px;
+    font-size: 64px;
+}
+.header>p{
+    line-height: 32px;
+    font-size: 24px;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    align-self: center;
+    justify-self: center;
+}
+
+.carousel>img{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;   
+    border-radius: 20px;
+    /* object-fit: contain; */
+}
+.Image1{
+    left: -100%;
+    z-index: 1;
+    scale: 0.4;
+}
+.Image2{
+    left: -60%;
+    z-index: 2;
+    scale: 0.6;
+}
+.Image3{
+    z-index: 3;
+}
+.Image4{
+    right: -60%;
+    z-index: 2;
+    scale: 0.6;
+
+}
+.Image5{
+    right: -100%;
+    z-index: 1;
+    scale: 0.4;
+
+}
+.slideIndicator{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    column-gap: 12px;
+    height: 24px;
+    align-items: center;
+}
