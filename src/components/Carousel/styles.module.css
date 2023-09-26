@@ -5,9 +5,10 @@
     flex-direction: column;
     width: 100%;
     row-gap: 54px;
+    overflow: hidden;
 }
 .header{
-    margin-top: 180px;
+    margin-top: 140px;
     color: #231F20;
     display: flex;
     flex-direction: column;
@@ -26,8 +27,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     align-self: center;
     justify-self: center;
 }
@@ -38,7 +39,6 @@
     height: inherit;
     top: 0;   
     border-radius: 20px;
-    /* object-fit: contain; */
 }
 .Image1{
     left: -100%;
@@ -73,4 +73,11 @@
     column-gap: 12px;
     height: 24px;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel{
+        width: 400px;
+        height: 200px;
+    }
 }

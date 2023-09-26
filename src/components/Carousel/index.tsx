@@ -54,9 +54,9 @@ export const Carousel = ({images}:Props) => {
         <img src="arrow_left.svg" alt="" />
         {images.map((link,index)=>{
           if(index===selectedImage){
-            return <img src="selected_indicator.svg" alt="" />
+            return <img key={index} src="selected_indicator.svg" alt="" />
           }
-          return <img src="dot_indicator.svg" alt="" />
+          return <img key={index} src="dot_indicator.svg" alt="" />
         })}
         <img src="arrow_right.svg" alt="" />
       </div>
